@@ -1,727 +1,751 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dachi Limpieza Integral | Detailing Vehicular, Tapizados y Hogar en Villa Mercedes</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                            accent: '#10b981', // Emerald green accent
-                            accentHover: '#059669',
-                            dark: '#0f172a'
-                        }
-                    }
-                }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DACHI | Limpieza Integral - Villa Mercedes</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#00c6d7',
+              cyanDark: '#008ba3',
+              cyanLight: '#e0f8fa',
+              dark: '#0f172a',
+              darker: '#090d16',
+              card: '#1e293b'
             }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            body: ['Open Sans', 'sans-serif']
+          }
         }
-    </script>
-    <style>
-        .glow-effect {
-            box-shadow: 0 0 25px rgba(14, 165, 233, 0.25);
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #00c6d7 0%, #38ef7d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .instagram-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+    .instagram-text-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-brand-500 selection:text-white">
+<body class="bg-brand-darker text-slate-100 font-body antialiased">
 
-    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300" id="mainHeader">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-sparkles text-xl"></i>
-                    </div>
-                    <div>
-                        <span class="text-2xl font-black tracking-tight text-slate-900 block leading-none">DACHI</span>
-                        <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mt-1">Limpieza Integral</span>
-                    </div>
-                </a>
+  <!-- Header / Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-brand-dark/95 backdrop-blur-md z-40 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-full bg-brand-cyan text-brand-darker font-black text-2xl flex items-center justify-center shadow-lg shadow-brand-cyan/20">
+          D
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-wider text-white block leading-none">DACHI</span>
+          <span class="text-[10px] tracking-widest text-brand-cyan font-semibold block uppercase">Limpieza Integral</span>
+        </div>
+      </a>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
-                    <a href="#inicio" class="hover:text-brand-600 transition-colors">Inicio</a>
-                    <a href="#servicios" class="hover:text-brand-600 transition-colors">Servicios</a>
-                    <a href="#cotizador" class="hover:text-brand-600 transition-colors">Cotizador Express</a>
-                    <a href="#nosotros" class="hover:text-brand-600 transition-colors">Nosotros</a>
-                    <a href="#contacto" class="hover:text-brand-600 transition-colors">Contacto</a>
-                </nav>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm">
+        <a href="#vehiculos" class="hover:text-brand-cyan transition-colors">Vehículos</a>
+        <a href="#motos" class="hover:text-brand-cyan transition-colors">Motos</a>
+        <a href="#hogar" class="hover:text-brand-cyan transition-colors">Hogar y Tapizados</a>
+        <a href="#vapor" class="hover:text-brand-cyan transition-colors">A Vapor</a>
+        <a href="#cotizador" class="text-brand-cyan hover:underline">Cotizador Exprés</a>
+      </nav>
 
-                <!-- Header Actions -->
-                <div class="hidden lg:flex items-center gap-4">
-                    <a href="https://instagram.com/DACHI.LIMPIEZA.VM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-md hover:scale-105 transition-all" title="Seguinos en Instagram">
-                        <i class="fa-brands fa-instagram text-lg"></i>
-                    </a>
-                    <a href="#cotizador" class="inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold text-brand-700 bg-brand-50 rounded-xl hover:bg-brand-100 transition-all">
-                        <i class="fa-solid fa-calculator mr-2"></i> Cotizar Ahora
-                    </a>
-                    <a href="https://wa.me/5426347536?text=Hola%20Dachi%20Limpieza!%20Quisiera%20consultar%20por%20un%20servicio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-brand-accent hover:bg-brand-accentHover rounded-xl shadow-lg shadow-emerald-500/20 transition-all hover:-translate-y-0.5">
-                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Contactar
-                    </a>
-                </div>
+      <!-- Action Buttons Header -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Instagram Link Destacado -->
+        <a href="https://www.instagram.com/dachi.limpieza.vm/" target="_blank" rel="noopener noreferrer" 
+           class="instagram-gradient text-white px-4 py-2 rounded-full font-bold text-sm hover:opacity-90 transition-all flex items-center gap-2 shadow-md hover:scale-105 transform">
+          <i class="fa-brands fa-instagram text-lg"></i>
+          <span>@dachi.limpieza.vm</span>
+        </a>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobileMenuBtn" type="button" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
-                        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
-                    </button>
-                </div>
-            </div>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer"
+           class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-full font-bold text-sm transition-all flex items-center gap-2 shadow-md hover:scale-105 transform">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden lg:inline">2634 751436</span>
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white text-2xl p-2" aria-label="Abrir Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+      <a href="#vehiculos" class="mobile-link block py-2 border-b border-slate-800 text-slate-200 font-medium">Vehículos (Autos / Camionetas)</a>
+      <a href="#motos" class="mobile-link block py-2 border-b border-slate-800 text-slate-200 font-medium">Motos</a>
+      <a href="#hogar" class="mobile-link block py-2 border-b border-slate-800 text-slate-200 font-medium">Sillones y Colchones</a>
+      <a href="#vapor" class="mobile-link block py-2 border-b border-slate-800 text-slate-200 font-medium">Limpieza a Vapor</a>
+      <a href="#cotizador" class="mobile-link block py-2 text-brand-cyan font-bold">Cotizador Online</a>
+      
+      <div class="pt-4 flex flex-col gap-3">
+        <a href="https://www.instagram.com/dachi.limpieza.vm/" target="_blank" rel="noopener noreferrer" 
+           class="instagram-gradient w-full py-3 rounded-xl font-bold text-center text-white flex items-center justify-center gap-2 shadow-lg">
+          <i class="fa-brands fa-instagram text-xl"></i>
+          <span>Seguinos en Instagram</span>
+        </a>
+        <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer"
+           class="bg-emerald-500 w-full py-3 rounded-xl font-bold text-center text-white flex items-center justify-center gap-2 shadow-lg">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Consultar por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Promocional Instagram Destacado -->
+  <div class="mt-20 bg-gradient-to-r from-purple-900 via-pink-800 to-red-800 text-white py-3 px-4 text-center relative z-30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 text-sm sm:text-base">
+      <span class="font-semibold flex items-center gap-2">
+        <i class="fa-brands fa-instagram text-xl"></i>
+        ¡Mirá nuestros trabajos antes y después en Instagram!
+      </span>
+      <a href="https://www.instagram.com/dachi.limpieza.vm/" target="_blank" rel="noopener noreferrer" 
+         class="bg-white text-slate-900 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors shadow">
+        Ver @dachi.limpieza.vm <i class="fa-solid fa-arrow-right text-xs ml-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-b from-brand-dark to-brand-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-sm font-semibold mb-6">
+          <i class="fa-solid fa-sparkles"></i> Limpieza que se nota • Villa Mercedes, San Luis
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 uppercase">
+          Tu Vehículo y Hogar, <span class="gradient-text">Como Nuevo</span>
+        </h1>
+        <p class="text-slate-300 text-lg sm:text-xl mb-8 font-light leading-relaxed">
+          Especialistas en detailing vehicular, limpieza profunda de tapizados, sillones, colchones y desinfección a vapor. <strong>Servicio a domicilio para tu total comodidad.</strong>
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#cotizador" class="w-full sm:w-auto bg-brand-cyan hover:bg-brand-cyanDark text-brand-darker font-black px-8 py-4 rounded-xl shadow-lg shadow-brand-cyan/20 transition-all transform hover:-translate-y-1 text-center">
+            <i class="fa-solid fa-calculator mr-2"></i> Cotizar Mi Servicio
+          </a>
+          <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20pedir%20un%20turno" target="_blank" rel="noopener noreferrer"
+             class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i> Pedir Turno Directo
+          </a>
         </div>
 
-        <!-- Mobile menu panel -->
-        <div class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3" id="mobileMenu">
-            <a href="#inicio" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Inicio</a>
-            <a href="#servicios" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Servicios</a>
-            <a href="#cotizador" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Cotizador Express</a>
-            <a href="#nosotros" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Nosotros</a>
-            <a href="#contacto" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Contacto</a>
-            <div class="pt-2 flex flex-col gap-2">
-                <a href="https://instagram.com/DACHI.LIMPIEZA.VM" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 text-sm font-bold text-white bg-gradient-to-r from-purple-600 via-rose-500 to-amber-500 rounded-xl shadow-md flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-instagram text-lg"></i> @DACHI.LIMPIEZA.VM
-                </a>
-                <a href="https://wa.me/5426347536?text=Hola%20Dachi%20Limpieza!%20Quisiera%20pedir%20un%20turno" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 text-sm font-bold text-white bg-brand-accent rounded-xl shadow-md">
-                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Turno por WhatsApp
-                </a>
-            </div>
+        <!-- Badges informativos -->
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-800 text-slate-400 text-sm">
+          <div class="flex items-center justify-center gap-2">
+            <i class="fa-solid fa-house-chimney text-brand-cyan text-lg"></i>
+            <span>A Domicilio</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i class="fa-solid fa-shield-halved text-brand-cyan text-lg"></i>
+            <span>Presupuesto Sin Cargo</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i class="fa-solid fa-map-pin text-brand-cyan text-lg"></i>
+            <span>Villa Mercedes, SL</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i class="fa-solid fa-spray-can-sparkles text-brand-cyan text-lg"></i>
+            <span>Inyección & Extracción</span>
+          </div>
         </div>
-    </header>
 
-    <section id="inicio" class="relative pt-8 pb-20 lg:pt-16 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-brand-900 text-white">
-        <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px]"></div>
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500 rounded-full blur-3xl opacity-20"></div>
-        <div class="absolute top-1/2 -left-40 w-96 h-96 bg-emerald-500 rounded-full blur-3xl opacity-15"></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md text-brand-400 text-xs sm:text-sm font-semibold tracking-wide">
-                        <i class="fa-solid fa-location-dot text-brand-400"></i> Villa Mercedes, San Luis
-                    </div>
-                    
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
-                        Renová tu vehículo, tapizados y hogar con <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">calidad profesional</span>.
-                    </h1>
-                    
-                    <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        Expertos en <strong class="text-white font-semibold">detailing vehicular</strong>, desinfección profunda de <strong class="text-white font-semibold">tapizados, colchones, sillones</strong> y espacios integrales. Devolvele el aroma y brillo original a tus pertenencias.
-                    </p>
+  <!-- SECCIÓN 1: VEHÍCULOS (Autos y Camionetas) -->
+  <section id="vehiculos" class="py-20 bg-brand-dark/50 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-cyan font-extrabold uppercase tracking-widest text-sm">Detailing & Limpieza Vehicular</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">Planes para Autos y Camionetas</h2>
+        <p class="text-slate-400 mt-3">Elegí el nivel de limpieza ideal para tu vehículo</p>
+      </div>
 
-                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300">
-                        <span class="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                            <i class="fa-solid fa-circle-check text-brand-400"></i> Maquinaria de Inyección / Extracción
-                        </span>
-                        <span class="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                            <i class="fa-solid fa-circle-check text-brand-400"></i> Productos Biodegradables
-                        </span>
-                        <span class="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-                            <i class="fa-solid fa-circle-check text-brand-400"></i> Servicio a Domicilio
-                        </span>
-                    </div>
-
-                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="#cotizador" class="w-full sm:w-auto px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-500/30 transition-all hover:scale-105 flex items-center justify-center gap-3">
-                            <i class="fa-solid fa-calculator text-lg"></i>
-                            <span>Cotizar en Línea</span>
-                        </a>
-                        <a href="https://wa.me/5426347536?text=Hola!%20Me%20interesa%20pedir%20un%20turno%20en%20Dachi%20Limpieza" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/25 transition-all hover:scale-105 flex items-center justify-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-xl"></i>
-                            <span>Turno por WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="relative bg-slate-800/80 rounded-3xl border border-white/10 p-6 backdrop-blur-xl shadow-2xl overflow-hidden glow-effect">
-                            <div class="aspect-4/3 rounded-2xl overflow-hidden relative mb-5">
-                                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80" alt="Limpieza de vehículo y detailing" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
-                                <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
-                                    <span class="bg-brand-500/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">
-                                        Limpieza Técnica Pro
-                                    </span>
-                                    <span class="text-xs text-white/80 bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
-                                        <i class="fa-solid fa-star text-amber-400 mr-1"></i>5.0 en Villa Mercedes
-                                    </span>
-                                </div>
-                            </div>
-                            
-                            <div class="grid grid-cols-2 gap-3 text-left">
-                                <div class="p-3 rounded-xl bg-white/5 border border-white/5">
-                                    <p class="text-xs text-slate-400">Eliminación de</p>
-                                    <p class="text-sm font-bold text-white">99.9% bacterias y ácaros</p>
-                                </div>
-                                <div class="p-3 rounded-xl bg-white/5 border border-white/5">
-                                    <p class="text-xs text-slate-400">Secado rápido</p>
-                                    <p class="text-sm font-bold text-white">Listos para usar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+      <!-- Grid de Planes -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- BASE / EXPRESS -->
+        <div class="bg-brand-card rounded-2xl p-8 border border-slate-700/60 shadow-xl relative flex flex-col justify-between hover:border-brand-cyan/50 transition-all">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-2xl font-black text-white uppercase">BASE</h3>
+                <p class="text-brand-cyan font-semibold text-xs tracking-wider uppercase">Limpieza Express</p>
+              </div>
+              <i class="fa-solid fa-car text-3xl text-slate-500"></i>
             </div>
+
+            <ul class="space-y-3 text-slate-300 text-sm mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Lavado carrocería</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Llantas</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Aspirado interior</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Vidrios</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Cubre alfombra</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="bg-slate-900/80 rounded-xl p-4 border border-slate-800 space-y-2 mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400 font-medium text-sm">Autos:</span>
+                <span class="text-2xl font-black text-white">$20.000</span>
+              </div>
+              <div class="flex justify-between items-center pt-2 border-t border-slate-800">
+                <span class="text-slate-400 font-medium text-sm">Camionetas:</span>
+                <span class="text-2xl font-black text-white">$25.000</span>
+              </div>
+            </div>
+            <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20solicitar%20el%20Plan%20BASE%20Limpieza%20Express" target="_blank" rel="noopener noreferrer" 
+               class="block text-center w-full bg-slate-800 hover:bg-brand-cyan hover:text-brand-darker text-white font-bold py-3 rounded-xl transition-all">
+              Pedir Plan Base
+            </a>
+          </div>
         </div>
-    </section>
 
-    <section id="servicios" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-brand-50 px-3 py-1 rounded-md">Lo que hacemos</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Servicios Especializados</h2>
-                <p class="text-slate-600 text-lg mt-4">Soluciones de limpieza de alta gama con equipamiento de inyección-extracción y productos neutralizadores de olores.</p>
+        <!-- PREMIUM / PROFUNDA -->
+        <div class="bg-brand-card rounded-2xl p-8 border-2 border-brand-cyan shadow-2xl relative flex flex-col justify-between transform md:-translate-y-2">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-cyan text-brand-darker font-black text-xs uppercase px-4 py-1 rounded-full shadow">
+            Más Popular
+          </div>
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-2xl font-black text-white uppercase">PREMIUM</h3>
+                <p class="text-brand-cyan font-semibold text-xs tracking-wider uppercase">Limpieza Profunda</p>
+              </div>
+              <i class="fa-solid fa-spray-can text-3xl text-brand-cyan"></i>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 bg-brand-500 rounded-2xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-brand-500/30 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-car-rear"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Detailing e Interiores Vehiculares</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                            Desarme parcial de asientos si se requiere, aspirado profundo de alfombras, lavado de butacas por extracción, techo, torpedero, paneles de puerta y baúl.
-                        </p>
-                        <ul class="space-y-2 text-xs text-slate-700 font-medium mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Autos chicos, Sedanes, SUVs y Camionetas</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Acondicionamiento de plásticos y cueros</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Eliminación de malos olores y humedad</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 block">Estimado desde</span>
-                            <span class="text-lg font-bold text-slate-900">$25.000</span>
-                        </div>
-                        <a href="#cotizador" class="px-4 py-2 bg-white border border-slate-300 hover:border-brand-500 text-brand-600 font-semibold rounded-xl text-xs transition-colors">
-                            Cotizar mi auto
-                        </a>
-                    </div>
-                </div>
+            <ul class="space-y-3 text-slate-300 text-sm mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Lavado carrocería</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Llantas</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Aspirado interior</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Acondicionamientos de plásticos</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Vidrios</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Cubre alfombra</li>
+            </ul>
+          </div>
 
-                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-couch"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Limpieza de Sillones y Tapizados</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                            Limpieza a fondo para sillones de tela, chenille, pana, cuero y cuerina. Remoción de manchas rebeldes de café, jugos, mascotas y suciedad acumulada.
-                        </p>
-                        <ul class="space-y-2 text-xs text-slate-700 font-medium mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Sillones de 1, 2, 3 o más cuerpos</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Sillas de comedor y banquetas</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tratamiento de desinfección biológica</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 block">Estimado desde</span>
-                            <span class="text-lg font-bold text-slate-900">$18.000</span>
-                        </div>
-                        <a href="#cotizador" class="px-4 py-2 bg-white border border-slate-300 hover:border-emerald-500 text-emerald-600 font-semibold rounded-xl text-xs transition-colors">
-                            Cotizar Sillón
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 bg-cyan-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-600/30 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-bed"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Colchones y Sommiers</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                            Saneamiento e higienización contra ácaros, manchado de transpiración y bacterias. Indispensable para mantener un ambiente de descanso apto para alérgicos.
-                        </p>
-                        <ul class="space-y-2 text-xs text-slate-700 font-medium mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> 1 plaza, 2 plazas, Queen y King Size</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Sanitización profunda en ambas caras</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Secado asistido de alta eficiencia</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 block">Estimado desde</span>
-                            <span class="text-lg font-bold text-slate-900">$15.000</span>
-                        </div>
-                        <a href="#cotizador" class="px-4 py-2 bg-white border border-slate-300 hover:border-cyan-600 text-cyan-600 font-semibold rounded-xl text-xs transition-colors">
-                            Cotizar Colchón
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-600/30 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-house-chimney-window"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Limpieza Integral Hogar / Oficinas</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                            Mantenimiento y limpiezas profundas para casas, departamentos, locales comerciales y oficinas en Villa Mercedes. Puesta a punto fin de obra.
-                        </p>
-                        <ul class="space-y-2 text-xs text-slate-700 font-medium mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Alfombras fijas y moquetes</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Vidrios, aberturas y superficies</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Planes periódicos para empresas</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-500 block">Presupuesto</span>
-                            <span class="text-lg font-bold text-slate-900">A medida</span>
-                        </div>
-                        <a href="https://wa.me/5426347536?text=Hola!%20Quisiera%20consultar%20presupuesto%20para%20limpieza%20de%20hogar/comercio" target="_blank" class="px-4 py-2 bg-white border border-slate-300 hover:border-indigo-600 text-indigo-600 font-semibold rounded-xl text-xs transition-colors">
-                            Consultar
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group md:col-span-2 lg:col-span-2">
-                    <div class="grid md:grid-cols-2 gap-6 items-center">
-                        <div>
-                            <div class="w-14 h-14 bg-sky-500 rounded-2xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-sky-500/30 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-shield-halved"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-3">Protección e Impermeabilización de Textiles</h3>
-                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                                Aplicación de capa protectora repelente de líquidos para evitar que manchas de café, vino o aceite penetren las fibras de tus sillones o tapizados de vehículos.
-                            </p>
-                        </div>
-                        <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
-                            <p class="text-xs font-bold text-slate-800 uppercase tracking-wider">Beneficios del Tratamiento:</p>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-droplet-slash text-sky-500 mt-1"></i>
-                                <p class="text-xs text-slate-600">Repele líquidos instantáneamente para facilitar la limpieza rápida.</p>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-sun text-sky-500 mt-1"></i>
-                                <p class="text-xs text-slate-600">Protege contra la decoloración solar y el desgaste habitual.</p>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-clock-rotate-left text-sky-500 mt-1"></i>
-                                <p class="text-xs text-slate-600">Prolonga la vida útil de tus muebles hasta por 12 meses.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+          <div>
+            <div class="bg-slate-900/80 rounded-xl p-4 border border-slate-800 space-y-2 mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400 font-medium text-sm">Autos:</span>
+                <span class="text-2xl font-black text-brand-cyan">$25.000</span>
+              </div>
+              <div class="flex justify-between items-center pt-2 border-t border-slate-800">
+                <span class="text-slate-400 font-medium text-sm">Camionetas:</span>
+                <span class="text-2xl font-black text-brand-cyan">$30.000</span>
+              </div>
             </div>
+            <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20solicitar%20el%20Plan%20PREMIUM%20Limpieza%20Profunda" target="_blank" rel="noopener noreferrer" 
+               class="block text-center w-full bg-brand-cyan hover:bg-brand-cyanDark text-brand-darker font-black py-3 rounded-xl transition-all shadow-lg shadow-brand-cyan/20">
+              Pedir Plan Premium
+            </a>
+          </div>
         </div>
-    </section>
 
-    <section id="cotizador" class="py-20 bg-gradient-to-b from-slate-100 to-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-brand-100 px-3 py-1 rounded-md">Transparencia Total</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Cotizador Express Interactivo</h2>
-                <p class="text-slate-600 text-base mt-2">Seleccioná los ítems que querés limpiar para calcular un valor estimado al instante y enviarlo por WhatsApp.</p>
+        <!-- FULL / DETALLE COMPLETO -->
+        <div class="bg-brand-card rounded-2xl p-8 border border-slate-700/60 shadow-xl relative flex flex-col justify-between hover:border-brand-cyan/50 transition-all">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-2xl font-black text-white uppercase">FULL</h3>
+                <p class="text-brand-cyan font-semibold text-xs tracking-wider uppercase">Detalle Completo</p>
+              </div>
+              <i class="fa-solid fa-gem text-3xl text-slate-500"></i>
             </div>
 
-            <div class="bg-white rounded-3xl shadow-xl border border-slate-200/80 p-6 sm:p-10 relative">
-                
-                <div class="mb-8">
-                    <label class="block text-sm font-bold text-slate-800 mb-3">1. Seleccioná el tipo de servicio principal:</label>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="categoryGroup">
-                        <button type="button" data-cat="vehiculo" class="cat-btn p-4 rounded-xl border-2 border-brand-500 bg-brand-50/50 text-brand-700 font-bold text-sm flex flex-col items-center gap-2 transition-all">
-                            <i class="fa-solid fa-car text-2xl"></i>
-                            <span>Vehículos</span>
-                        </button>
-                        <button type="button" data-cat="sillon" class="cat-btn p-4 rounded-xl border-2 border-slate-200 hover:border-slate-300 text-slate-600 font-medium text-sm flex flex-col items-center gap-2 transition-all">
-                            <i class="fa-solid fa-couch text-2xl"></i>
-                            <span>Sillones</span>
-                        </button>
-                        <button type="button" data-cat="colchon" class="cat-btn p-4 rounded-xl border-2 border-slate-200 hover:border-slate-300 text-slate-600 font-medium text-sm flex flex-col items-center gap-2 transition-all">
-                            <i class="fa-solid fa-bed text-2xl"></i>
-                            <span>Colchones</span>
-                        </button>
-                        <button type="button" data-cat="sillas" class="cat-btn p-4 rounded-xl border-2 border-slate-200 hover:border-slate-300 text-slate-600 font-medium text-sm flex flex-col items-center gap-2 transition-all">
-                            <i class="fa-solid fa-chair text-2xl"></i>
-                            <span>Sillas y Otros</span>
-                        </button>
-                    </div>
-                </div>
+            <ul class="space-y-3 text-slate-300 text-sm mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Lavado carrocería y llantas</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Aspirado interior & profunda</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Limpieza de tapizados</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Alfombras</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Techo, plásticos y vidrios</li>
+            </ul>
+          </div>
 
-                <div class="mb-8">
-                    <label class="block text-sm font-bold text-slate-800 mb-3">2. Elegí el tamaño o modelo específico:</label>
-                    <select id="itemSelect" class="w-full p-3.5 rounded-xl border border-slate-300 text-slate-800 font-medium bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
-                    </select>
-                </div>
-
-                <div class="mb-8">
-                    <label class="block text-sm font-bold text-slate-800 mb-3">3. Adicionales opcionales:</label>
-                    <div class="space-y-3" id="addonsGroup">
-                        <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50">
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" value="5000" data-addon="Desinfección Antibacteriana Reforzada" class="addon-checkbox w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
-                                <span class="text-sm font-medium text-slate-700">Desinfección + Neutralización profunda de olores</span>
-                            </div>
-                            <span class="text-sm font-bold text-slate-900">+$5.000</span>
-                        </label>
-
-                        <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50">
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" value="8000" data-addon="Impermeabilizado Téxtil Antimanchas" class="addon-checkbox w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
-                                <span class="text-sm font-medium text-slate-700">Tratamiento Protección Impermeabilizante</span>
-                            </div>
-                            <span class="text-sm font-bold text-slate-900">+$8.000</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="bg-slate-900 rounded-2xl p-6 text-white flex flex-col sm:flex-row items-center justify-between gap-6">
-                    <div>
-                        <span class="text-xs text-slate-400 block font-medium">Presupuesto Estimado</span>
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400" id="totalPrice">$25.000</span>
-                            <span class="text-xs text-slate-400">ARS*</span>
-                        </div>
-                        <p class="text-[11px] text-slate-400 mt-1">*Precio orientativo. Sujeto a evaluación final según estado del tapizado.</p>
-                    </div>
-
-                    <button id="sendWhatsappQuoteBtn" type="button" class="w-full sm:w-auto px-6 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span>Solicitar Turno por WhatsApp</span>
-                    </button>
-                </div>
-
+          <div>
+            <div class="bg-slate-900/80 rounded-xl p-4 border border-slate-800 space-y-2 mb-6">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400 font-medium text-sm">Autos:</span>
+                <span class="text-2xl font-black text-white">$60.000</span>
+              </div>
+              <div class="flex justify-between items-center pt-2 border-t border-slate-800">
+                <span class="text-slate-400 font-medium text-sm">Camionetas:</span>
+                <span class="text-2xl font-black text-white">$70.000</span>
+              </div>
             </div>
+            <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20solicitar%20el%20Plan%20FULL%20Detalle%20Completo" target="_blank" rel="noopener noreferrer" 
+               class="block text-center w-full bg-slate-800 hover:bg-brand-cyan hover:text-brand-darker text-white font-bold py-3 rounded-xl transition-all">
+              Pedir Plan Full
+            </a>
+          </div>
         </div>
-    </section>
 
-    <section id="nosotros" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-brand-600 font-bold text-sm tracking-widest uppercase bg-brand-50 px-3 py-1 rounded-md">Compromiso Dachi</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-6">¿Por qué confiar en nosotros en Villa Mercedes?</h2>
-                    
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-slate-900">Maquinaria de Nivel Profesional</h3>
-                                <p class="text-slate-600 text-sm mt-1">Utilizamos extractoras industriales de inyección de agua con limpiadores enzimáticos de primera marca para no dañar las telas ni desteñir.</p>
-                            </div>
-                        </div>
+      </div>
 
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-slate-900">Puntualidad y Coordinación Fácil</h3>
-                                <p class="text-slate-600 text-sm mt-1">Respetamos tus tiempos. Agendamos turnos fijos y cumplimos rigurosamente los plazos de entrega y secado.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-shield-cat"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-slate-900">Seguro para Mascotas y Niños</h3>
-                                <p class="text-slate-600 text-sm mt-1">Nuestros insumos son no tóxicos, hipoalergénicos y biodegradables, cuidan la salud de tu familia y tus mascotas.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-slate-900">Garantía de Satisfacción</h3>
-                                <p class="text-slate-600 text-sm mt-1">Si no estás conforme con el resultado del secado o la limpieza, revisamos el trabajo sin costo adicional.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="bg-gradient-to-tr from-brand-600 to-emerald-500 rounded-3xl p-1 shadow-2xl">
-                        <div class="bg-slate-900 rounded-[22px] p-8 text-white">
-                            <h3 class="text-2xl font-bold mb-4">¿Tenés dudas sobre tu tapizado?</h3>
-                            <p class="text-slate-300 text-sm mb-6">
-                                Mandanos una foto de tu vehículo, sillón o alfombra por WhatsApp y te orientamos al instante sobre cuál es el mejor tratamiento posible.
-                            </p>
-                            <a href="https://wa.me/5426347536?text=Hola!%20Te%20env%C3%ADo%20una%20foto%20para%20consultar%20por%20limpieza" target="_blank" class="w-full py-3.5 bg-brand-accent hover:bg-brand-accentHover text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg transition-all">
-                                <i class="fa-brands fa-whatsapp text-xl"></i>
-                                Enviar Foto por WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Servicios Adicionales Vehículos -->
+      <div class="bg-brand-dark rounded-2xl p-6 sm:p-8 border border-slate-800">
+        <h3 class="text-xl font-bold text-white mb-6 text-center uppercase tracking-wider">
+          <i class="fa-solid fa-plus-circle text-brand-cyan mr-2"></i> Servicios Adicionales para Vehículos
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-brand-card p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="text-brand-cyan text-2xl mb-2"><i class="fa-solid fa-couch"></i></div>
+              <h4 class="font-bold text-white">Limpieza Interior Completa</h4>
+              <p class="text-xs text-slate-400 mt-1 mb-4">Tapizados, alfombras, techo, plásticos y aspiración profunda.</p>
             </div>
+            <div class="flex justify-between text-sm pt-3 border-t border-slate-800 font-bold">
+              <span>Auto: <strong class="text-brand-cyan">$40.000</strong></span>
+              <span>Camioneta: <strong class="text-brand-cyan">$50.000</strong></span>
+            </div>
+          </div>
+
+          <div class="bg-brand-card p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="text-brand-cyan text-2xl mb-2"><i class="fa-solid fa-arrows-to-dot"></i></div>
+              <h4 class="font-bold text-white">Limpieza Techo, Parantes y Para Sol</h4>
+              <p class="text-xs text-slate-400 mt-1 mb-4">Eliminación de manchas difíciles del techo y parasoles.</p>
+            </div>
+            <div class="flex justify-between text-sm pt-3 border-t border-slate-800 font-bold">
+              <span>Auto: <strong class="text-brand-cyan">$10.000</strong></span>
+              <span>Camioneta: <strong class="text-brand-cyan">$10.000</strong></span>
+            </div>
+          </div>
+
+          <div class="bg-brand-card p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="text-brand-cyan text-2xl mb-2"><i class="fa-solid fa-engine"></i></div>
+              <h4 class="font-bold text-white">Limpieza Motor Completo</h4>
+              <p class="text-xs text-slate-400 mt-1 mb-4">Desengrase y detallado completo del compartimento motor.</p>
+            </div>
+            <div class="flex justify-between text-sm pt-3 border-t border-slate-800 font-bold">
+              <span>Auto: <strong class="text-brand-cyan">$40.000</strong></span>
+              <span>Camioneta: <strong class="text-brand-cyan">$50.000</strong></span>
+            </div>
+          </div>
+
         </div>
-    </section>
+      </div>
 
-    <section id="contacto" class="py-20 bg-slate-900 text-slate-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12">
-                
-                <div class="lg:col-span-5 space-y-6">
-                    <div>
-                        <div class="flex items-center gap-3 mb-2">
-                            <div class="w-10 h-10 rounded-lg bg-brand-500 flex items-center justify-center text-white">
-                                <i class="fa-solid fa-sparkles"></i>
-                            </div>
-                            <span class="text-2xl font-black text-white">DACHI</span>
-                        </div>
-                        <p class="text-sm text-slate-400">Servicio integral de limpieza y detailing en Villa Mercedes, San Luis.</p>
-                    </div>
+    </div>
+  </section>
 
-                    <div class="space-y-4 text-sm">
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-brand-400 mt-1"></i>
-                            <div>
-                                <strong class="block text-white">Ubicación:</strong>
-                                <span>Villa Mercedes, San Luis (Atención a domicilio y taller)</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-clock text-brand-400 mt-1"></i>
-                            <div>
-                                <strong class="block text-white">Horarios de Atención:</strong>
-                                <span>Lunes a Sábados: 08:00 hs a 20:00 hs</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i class="fa-brands fa-whatsapp text-emerald-400 mt-1 text-lg"></i>
-                            <div>
-                                <strong class="block text-white">WhatsApp Directo:</strong>
-                                <span>+54 263 475-36</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i class="fa-brands fa-instagram text-rose-400 mt-1 text-lg"></i>
-                            <div>
-                                <strong class="block text-white">Instagram Oficial:</strong>
-                                <a href="https://instagram.com/DACHI.LIMPIEZA.VM" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">@DACHI.LIMPIEZA.VM</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 border-t border-slate-800 flex gap-4">
-                        <a href="https://instagram.com/DACHI.LIMPIEZA.VM" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-rose-500 text-white flex items-center justify-center transition-colors">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://wa.me/5426347536" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-emerald-500 text-white flex items-center justify-center transition-colors">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 bg-slate-800/80 p-8 rounded-3xl border border-slate-700">
-                    <h3 class="text-xl font-bold text-white mb-2">Envianos una consulta directo</h3>
-                    <p class="text-xs text-slate-400 mb-6">Completá el formulario y nos pondremos en contacto a la brevedad.</p>
-
-                    <form id="contactForm" class="space-y-4">
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre y Apellido</label>
-                                <input type="text" id="formName" required placeholder="Ej. Juan Pérez" class="w-full p-3 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:border-brand-400 focus:outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-300 mb-1">Teléfono / WhatsApp</label>
-                                <input type="tel" id="formPhone" required placeholder="Ej. 26347536" class="w-full p-3 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:border-brand-400 focus:outline-none">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-1">Zona / Barrio en Villa Mercedes</label>
-                            <input type="text" id="formZone" placeholder="Ej. Barrio San Antonio" class="w-full p-3 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:border-brand-400 focus:outline-none">
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-1">Detalle del servicio que necesitas</label>
-                            <textarea id="formMessage" rows="3" required placeholder="Ej. Necesito limpiar un sillón de 2 cuerpos y la butaca de un auto..." class="w-full p-3 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:border-brand-400 focus:outline-none"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl transition-all shadow-md">
-                            Enviar Mensaje
-                        </button>
-                    </form>
-                    <div id="formStatus" class="hidden mt-4 p-3 rounded-xl text-center text-xs font-bold"></div>
-                </div>
-
-            </div>
-
-            <div class="mt-16 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-                <p>&copy; 2026 Dachi Limpieza Integral - Villa Mercedes, San Luis. Todos los derechos reservados.</p>
-            </div>
+  <!-- SECCIÓN 2: MOTOS -->
+  <section id="motos" class="py-16 bg-gradient-to-r from-slate-900 to-brand-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-brand-card rounded-3xl p-8 lg:p-12 border border-slate-700/80 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        
+        <div class="space-y-4 lg:w-2/3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-brand-cyan text-xs font-bold uppercase tracking-widest">
+            <i class="fa-solid fa-motorcycle"></i> Servicio Especial
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">LAVADO DE MOTO</h2>
+          <p class="text-slate-300 text-base sm:text-lg">Tu moto en las mejores manos. Cuidamos cada detalle para dejarla reluciente y protegida.</p>
+          
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-sm text-slate-300">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Limpieza profunda de barro y polvo</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Protección de pintura y plásticos</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-cyan"></i> Remoción de grasa de cadena y motor</li>
+          </ul>
         </div>
-    </section>
 
-    <a href="https://wa.me/5426347536?text=Hola%20Dachi%20Limpieza!%20Vengo%20desde%20la%20web%20y%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 focus:outline-none group">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <span class="absolute right-16 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
-            ¡Hablamos por WhatsApp!
-        </span>
-    </a>
+        <div class="lg:w-1/3 text-center w-full bg-brand-dark p-6 rounded-2xl border border-slate-800">
+          <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider">Precio Total Lavado</p>
+          <p class="text-5xl font-black text-brand-cyan my-2">$10.000</p>
+          <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20pedir%20turno%20para%20Lavado%20de%20Moto%20($10.000)" target="_blank" rel="noopener noreferrer"
+             class="mt-4 inline-block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-xl transition-all shadow-lg">
+            <i class="fa-brands fa-whatsapp mr-2"></i> Pedir Turno Moto
+          </a>
+        </div>
 
-    <script>
-        const catalogData = {
-            vehiculo: [
-                { name: "Auto Chico (Hatchback / 3 puertas)", price: 25000 },
-                { name: "Auto Sedán Intermedio (4 puertas)", price: 30000 },
-                { name: "SUV / Camioneta Chica", price: 35000 },
-                { name: "Pick-up / Camioneta Grande 4x4", price: 42000 }
-            ],
-            sillon: [
-                { name: "Sillón 1 Cuerpo / Reclinable", price: 14000 },
-                { name: "Sillón 2 Cuerpos", price: 20000 },
-                { name: "Sillón 3 Cuerpos", price: 26000 },
-                { name: "Esquinero L (4 a 5 cuerpos)", price: 36000 }
-            ],
-            colchon: [
-                { name: "Colchón 1 Plaza / 1 y 1/2 Plaza", price: 15000 },
-                { name: "Colchón 2 Plazas (Estándar)", price: 22000 },
-                { name: "Colchón Queen Size", price: 26000 },
-                { name: "Colchón King Size", price: 30000 }
-            ],
-            sillas: [
-                { name: "Juego de 4 Sillas Comedor (Tapizadas)", price: 16000 },
-                { name: "Juego de 6 Sillas Comedor (Tapizadas)", price: 22000 },
-                { name: "Silla de Oficina / Gamer", price: 8000 }
-            ]
-        };
+      </div>
+    </div>
+  </section>
 
-        let currentCat = "vehiculo";
+  <!-- SECCIÓN 3: SILLONES, LIVING Y COLCHONES -->
+  <section id="hogar" class="py-20 bg-brand-darker border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-cyan font-extrabold uppercase tracking-widest text-sm">Hogar & Limpieza de Tapizados</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">Sillones, Living y Colchones</h2>
+        <p class="text-slate-400 mt-3">Eliminamos manchas, ácaros, gérmenes y malos olores. Servicio realizado en tu propio domicilio.</p>
+      </div>
 
-        const categoryButtons = document.querySelectorAll('.cat-btn');
-        const itemSelect = document.getElementById('itemSelect');
-        const addonCheckboxes = document.querySelectorAll('.addon-checkbox');
-        const totalPriceEl = document.getElementById('totalPrice');
-        const sendWhatsappQuoteBtn = document.getElementById('sendWhatsappQuoteBtn');
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        
+        <!-- SILLONES Y LIVING -->
+        <div class="bg-brand-card rounded-2xl p-8 border border-slate-800 shadow-xl">
+          <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+            <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-cyan flex items-center justify-center text-2xl">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold text-white">Sillones y Living</h3>
+              <p class="text-xs text-slate-400">Limpieza por inyección y extracción profunda</p>
+            </div>
+          </div>
 
-        function populateItems(catKey) {
-            itemSelect.innerHTML = '';
-            const items = catalogData[catKey];
-            items.forEach((item) => {
-                const opt = document.createElement('option');
-                opt.value = item.price;
-                opt.textContent = `${item.name} - $${item.price.toLocaleString('es-AR')}`;
-                opt.dataset.name = item.name;
-                itemSelect.appendChild(opt);
-            });
-            calculateTotal();
+          <div class="space-y-4">
+            <div class="flex justify-between items-center py-3 border-b border-slate-800">
+              <span class="text-slate-200 font-medium">Sillón de 2 cuerpos</span>
+              <span class="text-2xl font-black text-brand-cyan">$25.000</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-slate-800">
+              <span class="text-slate-200 font-medium">Sillón de 3 cuerpos</span>
+              <span class="text-2xl font-black text-brand-cyan">$30.000</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-slate-800">
+              <div>
+                <span class="text-slate-200 font-medium block">Esquineros / L (Grandes)</span>
+                <span class="text-xs text-slate-400">Según tamaño</span>
+              </div>
+              <span class="text-2xl font-black text-brand-cyan"><span class="text-xs font-normal text-slate-400">Desde</span> $40.000</span>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <span class="text-slate-200 font-medium">Sillas de comedor tapizadas</span>
+              <span class="text-2xl font-black text-brand-cyan">$5.000 <span class="text-xs font-normal text-slate-400">c/u</span></span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20consultar%20por%20limpieza%20de%20sillones" target="_blank" rel="noopener noreferrer" 
+             class="mt-6 w-full block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition-all">
+            Consultar por Sillones
+          </a>
+        </div>
+
+        <!-- COLCHONES -->
+        <div class="bg-brand-card rounded-2xl p-8 border border-slate-800 shadow-xl">
+          <div class="flex items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+            <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-cyan flex items-center justify-center text-2xl">
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-extrabold text-white">Colchones</h3>
+              <p class="text-xs text-slate-400">Desinfección total de manchas y microorganismos</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between items-center py-3 border-b border-slate-800">
+              <span class="text-slate-200 font-medium">Colchón de 1 plaza</span>
+              <span class="text-2xl font-black text-brand-cyan">$20.000</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-slate-800">
+              <span class="text-slate-200 font-medium">Colchón de 2 plazas</span>
+              <span class="text-2xl font-black text-brand-cyan">$30.000</span>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <span class="text-slate-200 font-medium">Queen / King</span>
+              <span class="text-2xl font-black text-brand-cyan">$40.000</span>
+            </div>
+          </div>
+
+          <div class="mt-8 bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-xs text-slate-400 flex items-center gap-3">
+            <i class="fa-solid fa-info-circle text-brand-cyan text-xl"></i>
+            <span>Todos los servicios son realizados a domicilio en Villa Mercedes para tu máxima comodidad.</span>
+          </div>
+
+          <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20consultar%20por%20limpieza%20de%20colchones" target="_blank" rel="noopener noreferrer" 
+             class="mt-6 w-full block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition-all">
+            Consultar por Colchones
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: LIMPIEZA A VAPOR -->
+  <section id="vapor" class="py-16 bg-brand-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-slate-900 via-brand-card to-slate-900 rounded-3xl p-8 sm:p-12 border border-brand-cyan/30 text-center relative overflow-hidden">
+        
+        <div class="max-w-3xl mx-auto space-y-4">
+          <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-cyan/20 text-brand-cyan text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-smog"></i> Tecnología de Desinfección
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-white">LIMPIEZA A VAPOR</h2>
+          <p class="text-slate-300 text-base sm:text-lg">
+            Realizamos también limpieza a alta temperatura y presión para <strong>Hornos, Cocinas, Motores, Estufas y más</strong>. Elimina la grasa incrustada y bacteria sin dañar las superficies.
+          </p>
+          <div class="pt-4">
+            <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20consultar%20presupuesto%20para%20Limpieza%20a%20Vapor" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 bg-brand-cyan hover:bg-brand-cyanDark text-brand-darker font-black px-8 py-4 rounded-xl shadow-lg transition-all">
+              <i class="fa-brands fa-whatsapp text-xl"></i> Presupuesto Limpieza a Vapor
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: COTIZADOR EXPRÉS INTERACTIVO -->
+  <section id="cotizador" class="py-20 bg-brand-darker border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-brand-card rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-2xl">
+        <div class="text-center mb-8">
+          <span class="text-brand-cyan font-bold uppercase tracking-widest text-xs">Calculadora Automática</span>
+          <h2 class="text-3xl font-black text-white mt-1">Cotizador Exprés en Línea</h2>
+          <p class="text-slate-400 text-sm mt-2">Seleccioná los servicios que querés y obtené el total estimado de inmediato</p>
+        </div>
+
+        <form id="calc-form" class="space-y-6">
+          
+          <!-- Tipo de Vehículo -->
+          <div>
+            <label class="block text-slate-300 font-bold mb-2 text-sm uppercase tracking-wider">1. Vehículos</label>
+            <select id="calc-vehiculo" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-cyan focus:outline-none">
+              <option value="0" data-name="Sin vehículo">Ninguno</option>
+              <option value="20000" data-name="Auto - Plan Base Express">Auto - Plan Base Express ($20.000)</option>
+              <option value="25000" data-name="Auto - Plan Premium Profunda">Auto - Plan Premium Profunda ($25.000)</option>
+              <option value="60000" data-name="Auto - Plan Full Detalle">Auto - Plan Full Detalle ($60.000)</option>
+              <option value="25000" data-name="Camioneta - Plan Base Express">Camioneta - Plan Base Express ($25.000)</option>
+              <option value="30000" data-name="Camioneta - Plan Premium Profunda">Camioneta - Plan Premium Profunda ($30.000)</option>
+              <option value="70000" data-name="Camioneta - Plan Full Detalle">Camioneta - Plan Full Detalle ($70.000)</option>
+              <option value="10000" data-name="Moto - Lavado Profundo">Moto - Lavado Profundo ($10.000)</option>
+            </select>
+          </div>
+
+          <!-- Adicionales Vehículo -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <label class="flex items-center gap-3 p-3 bg-slate-900 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700">
+              <input type="checkbox" class="calc-check w-5 h-5 accent-brand-cyan" value="40000" data-name="Adicional: Interior Completo Auto ($40.000)">
+              <span class="text-sm text-slate-300">Interior Completo Auto ($40.000)</span>
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-slate-900 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700">
+              <input type="checkbox" class="calc-check w-5 h-5 accent-brand-cyan" value="50000" data-name="Adicional: Interior Completo Camioneta ($50.000)">
+              <span class="text-sm text-slate-300">Interior Completo Camioneta ($50.000)</span>
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-slate-900 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700">
+              <input type="checkbox" class="calc-check w-5 h-5 accent-brand-cyan" value="10000" data-name="Adicional: Techo, Parantes y Parasol ($10.000)">
+              <span class="text-sm text-slate-300">Techo / Parantes ($10.000)</span>
+            </label>
+            <label class="flex items-center gap-3 p-3 bg-slate-900 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700">
+              <input type="checkbox" class="calc-check w-5 h-5 accent-brand-cyan" value="40000" data-name="Adicional: Motor Completo ($40.000)">
+              <span class="text-sm text-slate-300">Motor Completo Auto ($40.000)</span>
+            </label>
+          </div>
+
+          <!-- Tapizados y Hogar -->
+          <div>
+            <label class="block text-slate-300 font-bold mb-2 text-sm uppercase tracking-wider pt-2">2. Sillones y Colchones</label>
+            <select id="calc-hogar" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-cyan focus:outline-none">
+              <option value="0" data-name="Sin ítem de hogar">Ninguno</option>
+              <option value="25000" data-name="Sillón de 2 Cuerpos">Sillón de 2 Cuerpos ($25.000)</option>
+              <option value="30000" data-name="Sillón de 3 Cuerpos">Sillón de 3 Cuerpos ($30.000)</option>
+              <option value="40000" data-name="Sillón Esquinero / L">Sillón Esquinero / L (Desde $40.000)</option>
+              <option value="20000" data-name="Colchón 1 Plaza">Colchón 1 Plaza ($20.000)</option>
+              <option value="30000" data-name="Colchón 2 Plazas">Colchón 2 Plazas ($30.000)</option>
+              <option value="40000" data-name="Colchón Queen / King">Colchón Queen / King ($40.000)</option>
+            </select>
+          </div>
+
+          <!-- Totalizador Display -->
+          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block">Total Estimado:</span>
+              <span id="calc-total" class="text-4xl font-black text-brand-cyan">$0</span>
+            </div>
+            <button type="button" id="calc-send-btn" 
+                    class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg">
+              <i class="fa-brands fa-whatsapp text-xl"></i> Enviar Cotización por WhatsApp
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Banner Redes Sociales e Instagram Enfatizado -->
+  <section class="py-12 bg-gradient-to-r from-purple-950 via-brand-dark to-slate-950 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-black text-white mb-3">¿Querés ver nuestros trabajos terminados?</h3>
+      <p class="text-slate-300 text-sm mb-6 max-w-xl mx-auto">
+        Subimos fotos y videos reales de los lavados, desinfección de tapizados y videos del antes y después a nuestro perfil de Instagram.
+      </p>
+      
+      <a href="https://www.instagram.com/dachi.limpieza.vm/" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-3 instagram-gradient text-white font-bold px-8 py-4 rounded-2xl text-lg shadow-xl hover:scale-105 transition-transform">
+        <i class="fa-brands fa-instagram text-2xl"></i>
+        <span>Seguinos en Instagram @dachi.limpieza.vm</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-darker border-t border-slate-800 py-12 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Col 1 -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 rounded-full bg-brand-cyan text-brand-darker font-black text-xl flex items-center justify-center">D</div>
+            <span class="text-xl font-black text-white">DACHI</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Servicio integral de limpieza de vehículos, sillones, tapizados y colchones a domicilio en Villa Mercedes, San Luis.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Contacto Directo</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <a href="https://wa.me/5492634751436" class="hover:text-white">2634 751436</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-pink-400"></i>
+              <a href="https://www.instagram.com/dachi.limpieza.vm/" target="_blank" class="hover:text-white">@dachi.limpieza.vm</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-brand-cyan"></i>
+              <span>Villa Mercedes, San Luis</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Garantía Dachi</h4>
+          <p class="text-xs text-slate-400 mb-2">Presupuestos y consultas sin cargo.</p>
+          <p class="text-xs text-slate-400">Trabajos con la mejor calidad en insumos y equipamiento profesional.</p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <p>© 2026 DACHI Limpieza Integral. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/5492634751436?text=Hola!%20Quiero%20consultar%20por%20un%20servicio" 
+     target="_blank" rel="noopener noreferrer" 
+     class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl transition-all transform hover:scale-110"
+     aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JavaScript Interactivo -->
+  <script>
+    // Menú Mobile Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Lógica del Cotizador Exprés
+    const selectVehiculo = document.getElementById('calc-vehiculo');
+    const selectHogar = document.getElementById('calc-hogar');
+    const checkboxes = document.querySelectorAll('.calc-check');
+    const displayTotal = document.getElementById('calc-total');
+    const sendBtn = document.getElementById('calc-send-btn');
+
+    function calcularTotal() {
+      let total = 0;
+      total += parseInt(selectVehiculo.value) || 0;
+      total += parseInt(selectHogar.value) || 0;
+
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          total += parseInt(cb.value) || 0;
         }
+      });
 
-        function calculateTotal() {
-            let selectedPrice = parseInt(itemSelect.value) || 0;
-            let addonsTotal = 0;
+      displayTotal.textContent = `$${total.toLocaleString('es-AR')}`;
+      return total;
+    }
 
-            addonCheckboxes.forEach(cb => {
-                if (cb.checked) {
-                    addonsTotal += parseInt(cb.value);
-                }
-            });
+    selectVehiculo.addEventListener('change', calcularTotal);
+    selectHogar.addEventListener('change', calcularTotal);
+    checkboxes.forEach(cb => cb.addEventListener('change', calcularTotal));
 
-            const grandTotal = selectedPrice + addonsTotal;
-            totalPriceEl.textContent = `$${grandTotal.toLocaleString('es-AR')}`;
+    // Enviar presupuesto generado a WhatsApp
+    sendBtn.addEventListener('click', () => {
+      const total = calcularTotal();
+      let detalle = [];
+
+      const vehiculoName = selectVehiculo.options[selectVehiculo.selectedIndex].getAttribute('data-name');
+      if (selectVehiculo.value > 0) detalle.push(`- ${vehiculoName}`);
+
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          detalle.push(`- ${cb.getAttribute('data-name')}`);
         }
+      });
 
-        categoryButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                categoryButtons.forEach(b => {
-                    b.classList.remove('border-brand-500', 'bg-brand-50/50', 'text-brand-700', 'font-bold');
-                    b.classList.add('border-slate-200', 'text-slate-600', 'font-medium');
-                });
-                btn.classList.remove('border-slate-200', 'text-slate-600', 'font-medium');
-                btn.classList.add('border-brand-500', 'bg-brand-50/50', 'text-brand-700', 'font-bold');
+      const hogarName = selectHogar.options[selectHogar.selectedIndex].getAttribute('data-name');
+      if (selectHogar.value > 0) detalle.push(`- ${hogarName}`);
 
-                currentCat = btn.dataset.cat;
-                populateItems(currentCat);
-            });
-        });
+      if (detalle.length === 0) {
+        alert('Por favor selecciona al menos un servicio para cotizar.');
+        return;
+      }
 
-        itemSelect.addEventListener('change', calculateTotal);
-        addonCheckboxes.forEach(cb => cb.addEventListener('change', calculateTotal));
-
-        sendWhatsappQuoteBtn.addEventListener('click', () => {
-            const selectedOption = itemSelect.options[itemSelect.selectedIndex];
-            const itemName = selectedOption ? selectedOption.dataset.name : '';
-            const total = totalPriceEl.textContent;
-
-            let selectedAddons = [];
-            addonCheckboxes.forEach(cb => {
-                if (cb.checked) {
-                    selectedAddons.push(cb.dataset.addon);
-                }
-            });
-
-            let message = `Hola *Dachi Limpieza Integral*! Quisiera pedir un turno con el cotizador express de la web:\n\n`;
-            message += `🔹 *Servicio:* ${itemName}\n`;
-            if (selectedAddons.length > 0) {
-                message += `🔹 *Adicionales:* ${selectedAddons.join(', ')}\n`;
-            }
-            message += `💰 *Estimado:* ${total}\n\n`;
-            message += `¿Tienen disponibilidad en Villa Mercedes para los próximos días?`;
-
-            const encodedMsg = encodeURIComponent(message);
-            window.open(`https://wa.me/5426347536?text=${encodedMsg}`, '_blank');
-        });
-
-        populateItems('vehiculo');
-
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        const contactForm = document.getElementById('contactForm');
-        const formStatus = document.getElementById('formStatus');
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('formName').value;
-            const phone = document.getElementById('formPhone').value;
-            const zone = document.getElementById('formZone').value;
-            const message = document.getElementById('formMessage').value;
-
-            formStatus.classList.remove('hidden', 'bg-red-500/20', 'text-red-300');
-            formStatus.classList.add('bg-emerald-500/20', 'text-emerald-300');
-            formStatus.textContent = "¡Mensaje listo! Redirigiendo a WhatsApp...";
-
-            let text = `Hola Dachi Limpieza! Mi nombre es *${name}* (${phone}).\n`;
-            if (zone) text += `Zona: ${zone}\n`;
-            text += `Consulta: ${message}`;
-
-            setTimeout(() => {
-                window.open(`https://wa.me/5426347536?text=${encodeURIComponent(text)}`, '_blank');
-                contactForm.reset();
-                formStatus.classList.add('hidden');
-            }, 1000);
-        });
-    </script>
+      const mensaje = `Hola DACHI! Estuve cotizando en la página web:%0A%0A*Servicios Seleccionados:*%0A${detalle.join('%0A')}%0A%0A*Total estimado:* $${total.toLocaleString('es-AR')}%0A%0AQuisiera consultar disponibilidad de turno.`;
+      
+      window.open(`https://wa.me/5492634751436?text=${mensaje}`, '_blank');
+    });
+  </script>
 </body>
 </html>
